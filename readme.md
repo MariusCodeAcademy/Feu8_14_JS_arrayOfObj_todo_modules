@@ -9,3 +9,7 @@
 7. exportuojam getTotal
 8. importuojam i app.js
 9. panaudojam getTotal kad apskaicouti avgArr bendra suma
+
+10. js-parts\js\modules\helper.js sukurti funkcija kuri gauna argumentu stringa ir grazina ji su pirma diziaja raide - makeFirstCapital()
+11. exportuojam ta funcija
+12. panaudojam app js isitikinti kad veikia
