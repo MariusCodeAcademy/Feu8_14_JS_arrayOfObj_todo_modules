@@ -36,3 +36,32 @@ const mainArr = [
 
 // console.log('mainArr ===', mainArr);
 console.table(mainArr);
+
+// atrinkti i nauja masyva tik vyrus
+// const maleCharacters = mainArr.filter((charObj) => {
+//   console.log('charObj ===', charObj);
+//   // jei vyras grazinam true
+//   if (charObj.gender === 'Male') {
+//     return true;
+//   }
+// });
+const maleCharacters = mainArr.filter((charObj) => charObj.gender === 'Male');
+console.table(maleCharacters);
+
+// gauti masyva su visu charakteriu vardais
+// map
+const namesArr = mainArr.map((charObj) => {
+  const currentName = charObj.name;
+  return currentName;
+});
+console.log('namesArr ===', namesArr);
+
+// surasti masyvo objekta kurio miestas yra 'Playa Verde'
+const ieskomasMiestas = 'Playa Verde';
+// find
+const foundObj = mainArr.find((charObj) => {
+  if (charObj.town === ieskomasMiestas) {
+    return true;
+  }
+});
+console.log('foundObj ===', foundObj);
