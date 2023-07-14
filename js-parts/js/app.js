@@ -24,6 +24,7 @@ printOnPage('lietuvos sirdis: ' + town);
 console.log('avgArr ===', avgArr);
 const avgTotal = getTotal(avgArr);
 printOnPage(avgTotal + ' is the total');
+makeFirstCapital(town);
 
 const str1 = makeFirstCapital('viskas mazosiom raidem');
 printOnPage(str1);
